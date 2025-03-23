@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+
+@layer utilities {
+.text-stroke {
+     -webkit-text-stroke: 1.2px #000;
+
+}
+
+
+@keyframes anim {
+0% {
+     transform: translateX(0); /* Start from the first image */
+} 
+100% {
+     transform: translateX(-100%); /* Move to the end */
+}    
+}
+
+.animate-slide {
+     animation: anim 30s linear infinite;
+}
+
+/* Custom Line-Height */
+.leading-custom {
+     line-height: 1.8;
+}
+}
+
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+     display: none;
+}
+.scrollbar-hide {
+     -ms-overflow-style: none;
+     scrollbar-width: none;
+}
